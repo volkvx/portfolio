@@ -1,0 +1,28 @@
+div.showcase div.images .colour 
+{
+background:url('../images/loader.gif') center center no-repeat #f2d429;
+}
+
+
+div.showcase.blue .colour {
+/* background-color:#31c2de; */
+background-color:#03F;
+}
+
+div.showcase.blue .colour h1, body.blue div.heading h1 {
+text-shadow:-1px -1px 0px #4D4D4D;	
+}
+
+
+
+div.showcase.lightblue .colour {
+/* background-color:#f3d529; */
+background-color:#09F; 
+}
+
+div.showcase.lightblue .colour h1, body.lightblue div.heading h1 {
+text-shadow:-1px -1px 0px #4D4D4D;
+}
+
+
+	
