@@ -1,0 +1,117 @@
+import React from "react";
+
+const projects = [
+  {
+    id: 1,
+    title: "Launch Amazon Prints",
+    type: "full",
+    image: "https://images.unsplash.com/photo-1581090700227-1e8f62f6f8e9?auto=format&fit=crop&w=1200&q=80",
+    description: "This was a major e-commerce project launched globally.",
+  },
+  {
+    id: 2,
+    title: "Project Alpha",
+    type: "half",
+    image: "http://viladio.com/img/healthcareLogo.jpg",
+    description: "A branding initiative for startups.",
+  },
+  {
+    id: 3,
+    title: "Project Beta",
+    type: "half",
+    image: "https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=600&q=80",
+    description: "An internal tool to improve workflow.",
+  },
+  {
+    id: 4,
+    title: "Project Gamma",
+    type: "full",
+    image: "https://images.unsplash.com/photo-1564868486634-d1dfef9e0d84?auto=format&fit=crop&w=1200&q=80",
+    description: "A cross-platform mobile app project.",
+  },
+  {
+    id: 5,
+    title: "Project Delta",
+    type: "half",
+    image: "https://images.unsplash.com/photo-1622495899075-9dcb313ba3b6?auto=format&fit=crop&w=600&q=80",
+    description: "A UI design system for internal use.",
+  },
+  {
+    id: 6,
+    title: "Project Epsilon",
+    type: "half",
+    image: "https://images.unsplash.com/photo-1607082350929-7ea40827617e?auto=format&fit=crop&w=600&q=80",
+    description: "You can configure custom heights or background scroll speeds later if you use a library like Lenis or react-scroll-parallax, but for now, the native bg-fixed parallax works well across most modern browsers.",
+  },
+];
+
+function App() {
+  return (
+    <div className="font-sans text-gray-900">
+      {/* ? Fixed Header */}
+      <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <nav className="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+          <div className="font-bold text-lg">My Portfolio</div>
+          <div className="space-x-4">
+            <a href="#home" className="text-gray-700 hover:text-blue-500 transition">Home</a>
+            <a href="#projects" className="text-gray-700 hover:text-blue-500 transition">Projects</a>
+            <a href="#resume" className="text-gray-700 hover:text-blue-500 transition">Resume</a>
+          </div>
+        </nav>
+      </header>
+
+      {/* ? Page Content, offset with padding to prevent content being hidden by fixed header */}
+      <div className="pt-16">
+
+<section
+  id="home"
+  className="h-screen bg-fixed bg-center bg-cover flex items-center justify-center text-white"
+  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=80')" }}
+>
+  <h1 className="text-5xl md:text-6xl font-bold bg-black/50 p-4 rounded">
+    Welcome to My Portfolio
+  </h1>
+</section>
+
+
+    <div id="projects" className="bg-gray-100 min-h-screen px-4 py-10">
+      <div className="flex flex-wrap -mx-2">
+
+
+        {projects.map((project) => (
+
+          <div
+            key={project.id}
+            className={`px-2 mb-6 ${
+              project.type === "full" ? "w-full" : "w-full md:w-1/2"
+            }`}
+          >
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h2 className="text-xl font-bold mb-2">{project.title}</h2>
+                <p className="text-gray-700">{project.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+
+
+      </div>
+    </div>
+
+
+
+        <section id="resume" className="min-h-screen bg-yellow-100 flex items-center justify-center">
+          <h2 className="text-2xl font-bold">Resume Coming Soon</h2>
+        </section>
+      </div>
+    </div>
+  );
+}
+
+export default App;

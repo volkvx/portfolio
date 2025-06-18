@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55006917-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-55006917-1');
+</script>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Vadim Volk - UX designer</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:700' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+</head>
+<body>
+
+<div> 
+<ul>
+  <li><a href="../../index.html">Home</a></li>
+</ul>
+</div>
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  
+  -->
+
+
+
+  <div class="section project">
+      <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h2>AWS - Service Catalog redesign</h2>
+          <p class="doc-section">The goal for AWS Service Catalog team is to provide administrators at large enterprises with tools to manage AWS computing products and allow internal users that may not be familiar with AWS launch the assigned products. The product should be scalable, easy and work on any device, including mobile. Historically, AWS navigation a fairly complex even for developers. Service Catalog was a strategic product to simplify such complexity and win enterprises over to use AWS platform. </p>
+          <p class="doc-section">
+
+I joined the team as the lead (and only) designer to resolve certain stalemate efforts to simplify some interactions. Unlike many other projects where user research would lead to generating UX insights, this project required a different approach. It required rethinking the architecture, dependencies, storage and creation of new design patterns.
+</p>
+
+
+  <blockquote class="default">
+    <p class="large-quote">Vadim brings amazingly clear thinking to seemingly complex situations. His ability to look at an interface and simplify it is unbelievable. He thinks deeply and thoroughly and can create or discover solutions to any problem. 
+    </p>
+  </blockquote>
+
+
+<p class="doc-section">
+
+I was involved in the project for little over a year and within that time completely transformed the product. I also established the UX discipline within the team to focus on the user needs first from establishing how customer insights are gathered to changing the architecture and the designs of the Service Catalog focusing on the user needs. The effort involved a large number of cross-team integration points: AWS’ tagging service, AWS Marketplace, legal teams, solution architects, etc. Countless sketches, over 2000 mockups and a dozen interactive prototypes paved the way to a more usable product. The team also took an audacious step to separate from the existing internal Amazon design frameworks and follow Google’s Material Design guidelines, for application to support mobile platforms. We also committed to making the application brandable for companies to customize the look as well as release the framework as open source. The lack of solid frameworks to implement a Progressive Web App (PWA) and the desire to make it an open source meant we had to write the entire framework in house. Essentially, we came to a point to start with a blank sheet.
+</p>
+
+
+  <blockquote class="default">
+    <p class="large-quote">
+Vadim exemplifies Thinking Big and Dive Deep. He delivers designs that not only improve, but transform the customer experience. Vadim does not only produce UIs and workflows which are soundly implemented, but also the vision for new architecture and systems that better serve the customers' needs. He communicates designs in concise, actionable ways to empower teams to build and implement. 
+</p> </blockquote>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+  <div class="section project">
+    <div class="container">
+    	<h3 class="section-heading">A glance at the final design</h3>
+		<div class="row">
+		<div class="eight columns nooverflow">
+			<a href="sc_01_finalDesigns.png">
+				<img class="design-thumbnail" src="sc_01_finalDesigns.png">
+			</a>
+
+		</div>
+		<div class="four columns">
+			<a href="20170511_ScMobile_TopMenu.mp4">
+				<img class="design-thumbnail" src="sc_01_videoMicroInteraction.png">
+			</a>
+			<p class="doc-section">Mobile-first design meant complete redesign of nearly all AWS UX patterns as tables. Targeting users not familiar with AWS meant it wasn't enough to visualize the internal data structures, but designing a smart application.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>
+
+
+  
+  
+  <div class="section project">
+    <div class="container">
+    		<h3 class="section-heading">AWS starting point</h3>
+		<div class="row">
+		<div class="nine columns nooverflow">
+			<a href="sc_02_awsPortal.png">
+				<img class="design-thumbnail" src="sc_02_awsPortal.png">
+			</a>
+
+		</div>
+		<div class="three columns">
+			<p class="doc-section">Main AWS console. Although many simplifications were made to this page, users not familiar with AWS generally could not start computing instances. Besides the lack of guardrails makes it likely to have many mistakes.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+  
+
+  <div class="section project">
+    <div class="container">
+
+			<p class="doc-section">Launching a computing instance was not trivial, involving choosing the right console and following many wizard pages with less than intuitive options.</p>
+
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_03_awsEc2.png">
+				<img class="design-thumbnail" src="sc_03_awsEc2.png">
+			</a>
+		</div>
+		
+		<div class="six columns">
+			<a href="sc_04_aws_launch.png">
+				<img class="design-thumbnail" src="sc_04_aws_launch.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+  
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="twelve columns nooverflow">
+			<h3 class="section-heading">Organizing computing instances</h3>
+			<p class="doc-section">A proposed simplification was to organize all instances (products) into portfolios. Those would be similar to file folders and have permissions and users manage at the portfolio (folder) level. A portfolio concept allows for a flexible way to manage permissions, tags and constraints.</p>
+		</div>
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_05_portfolios.png">
+				<img class="design-thumbnail" src="sc_05_portfolios.png">
+			</a>
+		</div>
+		
+		<div class="six columns">
+			<a href="sc_06_taggingPortfolio.png">
+				<img class="design-thumbnail" src="sc_06_taggingPortfolio.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="eight columns nooverflow">
+			<a href="sc_07_originalTags.png">
+				<img class="design-thumbnail" src="sc_07_originalTags.png">
+			</a>
+		</div>
+		
+		<div class="four columns">
+			<h3 class="section-heading">Original tag architecture</h3>
+			<p class="doc-section">Having descriptors (tags) assigned to a resource was the key mechanism to manage permissions and allow user extensibility. Administrators could add permissions based on tags, can organize products based on tags, add constraints, etc. The original tag design relied on three type of tags: associated tags, applied tags and internal tags. This was a challenge to make them intuitive to users. Research showed that users and internal developers could not intuitively understand or retain the differences between applied and associated tags. </p>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+  
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="eight columns nooverflow">
+			<a href="sc_08_tagsInAws.png">
+				<img class="design-thumbnail" src="sc_08_tagsInAws.png">
+			</a>
+		</div>
+		
+		<div class="four columns">
+			<h3 class="section-heading">Existing AWS tags</h3>
+			<p class="doc-section">A concept of adding a descriptor to any AWS resourse in a form key:value pair is supported throughout AWS. Unfortunately, the rudimentary nature of tags make it difficult to maintain. There are many limitations, as: the tags can only be added to the running instances, only a single value for a given key is allowed, all values are case sensitive and UI makes it easy to make typing mistakes and each resource needs to be tagged individually. Each team within AWS implemented UI for tags sligtly differently, as shown here. While being different all tags are presented in a table with editable rows. </p>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">Understanding user needs</h3>
+			<p class="doc-section">The team has previously done several customer contacts to collect the data that would influence the design, but not having a dedidcated researcher on the team the data was often conflicting and the questions were leading providing little value. I worked with the team to improve the questions and scale the effort of gathering customer insights.</p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_12_askingCustomers.png">
+				<img class="design-thumbnail" src="sc_12_askingCustomers.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">Conducting research</h3>
+			<p class="doc-section">Multiple prototypes were created for research purpose to understand the user behavior with the currrent product (in beta at the time) and test new concepts.</p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_13_reasearchPrototypes.png">
+				<img class="design-thumbnail" src="sc_13_reasearchPrototypes.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+  
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">Evaluating the existing UI</h3>
+			<p class="doc-section">Built upon the available AWS components, the product followed the AWS patterns along with the complexities of AWS. Since the target users were non-technical that didn't have previous AWS experience, the concepts were complicatec. Even simple dashboards for users to see what products were available to them or admin pages for the administrators to manage the existing products were not very intuitive (see below). A significant redesign was needed.</p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_14_beforeDashboard.png">
+				<img class="design-thumbnail" src="sc_14_beforeDashboard.png">
+			</a>
+		</div>
+		<p> </p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_15_beforeAdmin.png">
+				<img class="design-thumbnail" src="sc_15_beforeAdmin.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+  <div class="section project">
+    <div class="container">
+
+    	<h3 class="section-heading">More complexities</h3>
+			<p class="doc-section"></p>
+		<div class="row">
+		
+		<div class="six columns nooverflow">
+			<a href="sc_16_beforePortfolio.png">
+				<img class="design-thumbnail" src="sc_16_beforePortfolio.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+			<a href="sc_17_before_product.png">
+				<img class="design-thumbnail" src="sc_17_before_product.png">
+			</a>
+
+			<p class="doc-section">Managing portfolios, differentiating among products, launching a product or entering tags was not easy.</p>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_18_beforeEvents.png">
+				<img class="design-thumbnail" src="sc_18_beforeEvents.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+			<a href="sc_19_beforeTags.png">
+				<img class="design-thumbnail" src="sc_19_beforeTags.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">Designing a new experience</h3>
+			<p class="doc-section">I evaluted the existing architecture, the existing product and met with customers to understand their needs. As I was doing it, I constantly tried different approaches to solving the problem differently. Countless sketches were made and over 2000 sketches. </p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_21_SketchesToDo.png">
+				<img class="design-thumbnail" src="sc_21_SketchesToDo.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">Converging on a new design</h3>
+			<p class="doc-section">Within a month of working on new designs I realized that fundamental architectural changes were needed. I also designed a new architecture for the product changing the concept of a tag. A tag library was introduced and any product or portfolio could be tagged by a tag from a library. I removed the confusing distinction of assigning vs. applying tags. I also removed a concept of an optional vs. required tag. The same functionality (and more) was handled by a smarter back end. Changing the architecture meant starting the development effort from the beginning and there was much more scrutiny for the new designs and I had to make sure it operates well within the existing AWS tagging architecture. </p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_23_tagUiAggregation.png">
+				<img class="design-thumbnail" src="sc_23_tagUiAggregation.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">New architectural proposal</h3>
+			<p class="doc-section">To reach a consensus within a team and change the direction and adopt a new architecture required many conversations.</p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_24_tagProposal.png">
+				<img class="design-thumbnail" src="sc_24_tagProposal.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">Complete architecture</h3>
+			<p class="doc-section">Simplifying a complex system often cannot be done in small pieces and would require a new ovarall vision and architecture. The challenge was to design for every possible every case and every possible exception. I also drove the consesnsus among the team membera and with overall AWS organization that the propsed change was indeeded better than keeping the existing design. </p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_25_tagLongArchitecture.png">
+				<img class="design-thumbnail" src="sc_25_tagLongArchitecture.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_30_userFlow.png">
+				<img class="design-thumbnail" src="sc_30_userFlow.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_31_videoPrototype.png">
+				<img class="design-thumbnail" src="sc_31_videoPrototype.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Mobile-first prototypes</h3>
+			<p class="doc-section">It was a sinificant challenge to redesign not only the architecture for the new AWS service, but do it in such a way that application feels right on mobile. That required developing many new patterns and custom controls.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Mobile screens</h3>
+		<p class="doc-section">It was a sinificant challenge to redesign not only the architecture for the new AWS service, but do it in such a way that application feels right on mobile. That required developing many new patterns and custom controls.</p>
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_32_mobileScreens.png">
+				<img class="design-thumbnail" src="sc_32_mobileScreens.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_33_searchPattern.png">
+				<img class="design-thumbnail" src="sc_33_searchPattern.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Search patterns</h3>
+			<p class="doc-section">Searching across multiple objects was not possible in AWS services. Here my team designed a way to index and search different objects, history, or intuitively make more complex queries as 'find a tag key that starts with "e"'. Historically, filtering and searching were offered through different mechanisms to a user, in my designs a user had only one a simple but very powerful search. </p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="20161013_TaggingLibrary.mp4">
+				<img class="design-thumbnail" src="sc_34_conceptVideo.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Custom tag controls</h3>
+			<p class="doc-section">Tables are used to present any collections within AWS. It is also the case that all tags are shown in tables. Unfortunately, this pattern is error prone and doesn't work well on mobile. Here a new tag control was developed. The design allows for handling a single or multiple vales. In fact, the tags can be stored in an unsorted way in the backend, and the UI can do the aggregation by key. This was a very powerful and intuitive concept as our studies shown.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<h3 class="section-heading">Redesigning product list</h3>
+			<p class="doc-section">Navigating products within AWS Service Catalog was not intuitive. Below are before and after designs as scaled to desktop.</p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_35_beforeDashboard.png">
+				<img class="design-thumbnail" src="sc_35_beforeDashboard.png">
+			</a>
+		</div>
+		<p> </p>
+		<div class="twelve columns nooverflow">
+			<a href="sc_36_productsAfter.png">
+				<img class="design-thumbnail" src="sc_36_productsAfter.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Product details</h3>
+		<p class="doc-section">Navigating products within AWS Service Catalog was not intuitive. Below are before and after designs as scaled to desktop.</p>
+
+		<div class="row">
+		<div class="four columns nooverflow">
+			<a href="sc_37_productsMobile.png">
+				<img class="design-thumbnail" src="sc_37_productsMobile.png">
+			</a>
+		</div>
+		<p> </p>
+		<div class="eight columns nooverflow">
+			<a href="sc_38_ProductDetail.png">
+				<img class="design-thumbnail" src="sc_38_ProductDetail.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Matching AWS identity</h3>
+		<p class="doc-section">The architecture and the UX were getting quite solid, it became the time to make AWS Service Catalog look like the rest of AWS. A parallel effort on updating AWS logo and look has just finished so there was a new identity to match. We also considered other Amazon brands that influenced the decision on how to make the service look Amazonian.</p>
+
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_41_derivingColors.png">
+				<img class="design-thumbnail" src="sc_41_derivingColors.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Marketing</h3>
+		<p class="doc-section">Throughtout the design process we updated the logo, created several recognition icons issued to solution architects and users who helped us with testing and provided feedback.</p>
+
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_42_Marketing.png">
+				<img class="design-thumbnail" src="sc_42_Marketing.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Customizable branding</h3>
+		<p class="doc-section">The application framework was designed to support branding by large corporations. The framework allowed picking primary and secondary colors and would derive the rest of the application colors consistend with those. For example, it would adjust the contrast automatically to match the accessibility. Designs for different brands were developed and tested to make sure the framework is flexible enough to make the application look that it belongs to the specific organization and not necessarily to AWS.</p>
+
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_43_BrandingColors.png">
+				<img class="design-thumbnail" src="sc_43_BrandingColors.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_44_scalingUx.png">
+				<img class="design-thumbnail" src="sc_44_scalingUx.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Scaling UX work</h3>
+			<p class="doc-section">As the team grew and the initial project branched off into different subprojects for the UX (designing for the legacy, new framework, Progressive Web App work, customer engagement) I implemented a process to track UX requests.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Date filtering</h3>
+		<p class="doc-section">Implementing advanced filters is generally a challenge in mobile since there's not much room on the screen to put all options. This was a design to add a common date filtering option without taking up space and still being intuitive.</p>
+
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_45_searchAndFilter.png">
+				<img class="design-thumbnail" src="sc_45_searchAndFilter.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Multi selection</h3>
+		<p class="doc-section">A multi select option often can make certain operatoins easier. In our case a user would be able to select multiple products and assing them to a portfolio or set permissions for users. Using tables that easily support multi-select was not an option since they don't fit well within mobile, so new patterns were designed for selecting multiple items at once. </p>
+
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_46_multiSelection.png">
+				<img class="design-thumbnail" src="sc_46_multiSelection.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Avoiding errors</h3>
+		<p class="doc-section">A user using AWS would often experience a multitude of errors popping up on the screen. Something is not set, something else failed, somethin terminated -- everything can be communicated as an error. As our target user may not be familiar with AWS we wanted to limit the display of errors. The common error cases would be user exceeding some input, or deleting a non-empty portfolio would generate an error. Most of these cases do not require showing an error, in fact, we didn't want to show any errors. Exceeding the string limit could simply be solved by preventing a user from entering a longer string, or instead of showing an error for deleting a non-empty portfolio we could delete the items inside making it intuitive and forgiving (as providing an undo). Turned out the experience can be made much more intuitive by preemptively solving errors. </p>
+
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_47_avoidingErrors.png">
+				<img class="design-thumbnail" src="sc_47_avoidingErrors.png">
+			</a>
+		</div>
+		</div>
+	</div>
+ <div class="container">
+		<h3 class="section-heading">Avoiding notifications</h3>
+		<p class="doc-section">Similar to errors, notifications can be annoying. The problem with them is that the notification information is communicated in a way that is detached from the design. Imagine a user inserting a row in a table. A notification could show a text stating "A new row was inserted". But processing that notification requires extensive comprehension and it doesn't link the message to a potential question "where the new row was inserted?" A better approach is to show the effect of the user action directly in the UI. As inserting a row could hightlight a new row in a table with potential controls to undo the action. This would avoid confirmations and instantly provides a feedback about the user action. </p>
+
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_48_avoidingNotifications.png">
+				<img class="design-thumbnail" src="sc_48_avoidingNotifications.png">
+			</a>
+		</div>
+		</div>
+	</div>
+
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_49_productList.png">
+				<img class="design-thumbnail" src="sc_49_productList.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Cards and lists</h3>
+			<p class="doc-section">Many different options were designed for managing a collection of items. For a product list, the products can be arranged in cards, lists and there are many variations about the details. Generally cards can be more more flexible for showing inormation that may vary from card to card (as showing error state within a card). Here are some list designs that we tried.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Minor details -- copyright</h3>
+		<p class="doc-section">While the small may seem insignificant, a good design makes sure that details are not overlooked. Here's an example where I noticed that the legal copyright string was too long for mobile and wasn't communicating the proper message. Generally, showing a copyright string is a good way to indicathe the end of the page so it does serve a purpose besides simply displaying a copyright information. In this case I researched the need to display a range of years and the need to show "All rights reserved". Turned out, those parts are superflous. I got in touch with our legal team and was able to change the copyringht notice to be a tad more user friendly. It also fit nicely on mobile.</p>
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_50_copyright.png">
+				<img class="design-thumbnail" src="sc_50_copyright.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Copying products</h3>
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_51_copyProduct.png">
+				<img class="design-thumbnail" src="sc_51_copyProduct.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Redesigning launch wizard</h3>
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_52_launchWizard.png">
+				<img class="design-thumbnail" src="sc_52_launchWizard.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="eight columns nooverflow">
+			<a href="sc_54_copyFromMarketplace.png">
+				<img class="design-thumbnail" src="sc_54_copyFromMarketplace.png">
+			</a>
+		</div>
+		<div class="four columns nooverflow">
+		<h3 class="section-heading">Integration with AWS Marketplace</h3>
+			<p class="doc-section">AWS Marketplace is similar to Amazon shopping for software. It is a place for users or administrators to discover new software packages and try them out. Since I was working on AWS Service Catalog (an internal catalog of software) users could greatly benefit from a way to simply copy products from AWS Marketplace into the internally managed catalog of products. I designed several integration strategies starting from the basic initial release where users could copy the products to a full integration where administrators would be notified of the new versions and having a complete managed lifecycle.</p>
+
+		</div>
+		</div>
+
+        <div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_55_copyFromMarketplaceProgress.png">
+				<img class="design-thumbnail" src="sc_55_copyFromMarketplaceProgress.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+			<a href="sc_56_marketplaceIntegration.png">
+				<img class="design-thumbnail" src="sc_56_marketplaceIntegration.png">
+			</a>
+		</div>
+		</div>
+        <div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_57_IntegrationDetailed.png">
+				<img class="design-thumbnail" src="sc_57_IntegrationDetailed.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Tight integration with AWS Marketplace</h3>
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_58_integrationMocks.png">
+				<img class="design-thumbnail" src="sc_58_integrationMocks.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+			<a href="sc_59_integrationDesktop.png">
+				<img class="design-thumbnail" src="sc_59_integrationDesktop.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_61_productArchitecture.png">
+				<img class="design-thumbnail" src="sc_61_productArchitecture.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Changing product container</h3>
+			<p class="doc-section">As many of the architectural pieces were coming along, there was one sticking point remained preventing a fairly straightforward UX from being developed. It had to do with products and product versions. In the existing architecture, the product was a virtual container that had multiple product versions stored inside of it. When a user launches a product, a specific version within that product would need to be picked to run. That means while the user thinks about launching a "product" the actual "version" would run. It may sound logical, but in reality odd things were happening. There could be two different product containers each having identical versions – this would be confusing to have different names for the same product. Also when a product needs updating, a new version would be copied inside a product container. But which product container needs updating? This would be ambiguous. A better architectural approach needed to be developed. At this point I had a good understanding of the user scenarios and was able to design a better architecture. In essence, instead of having a product container, only versions would be stored internally. To the user, similar versions (all versions still have a “product name”) would be grouped together and can be managed as one entity. So most previous scenarios would still work as before: removing a “product” would translate to removing all similar versions. But in the new architecture, there would be no case of duplicated products or ambiguity about which version to update. </p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">Designing the product list</h3>
+		<div class="row">
+		<div class="twelve columns nooverflow">
+			<a href="sc_62_productBeforeAfter.png">
+				<img class="design-thumbnail" src="sc_62_productBeforeAfter.png">
+			</a>
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_63_customActions.png">
+				<img class="design-thumbnail" src="sc_63_customActions.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Architecting custom actions</h3>
+			<p class="doc-section">It is impossible to predict what type of actions a product may need to handle. Since here we deal with enterprise clients and AWS products, all “products” are virtualized computing instances. All products would need to support an action to Launch and Terminate and maybe Update. But besides these three actions, the support for other actions may be product specific. Within large enterprises, admins may want to define what those other custom actions might be, what products they may apply to and who can or cannot execute them. But what would the architecture be to support such flexibility? I designed the architecture to support such actions. Essentially an admin would create a global action, say “backup” for backing up databases and specify a namespace to indicate the type of computing it applies to. Since almost all computing instances are running within EC2 types, the custom action could be “EC2: Backup”. At this point we don’t know which instances are databases and which are not. There would be concepts of a white and a black lists that would make that such a link. In the backup case, an admin would be able to whitelist “INVOICES” instances and all the invoices databases would now have a custom action backup that can be executed. Alternatively, a user choosing a Backup action would be able to run a backup command on all Invoice instances. </p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_71_BestPractices.png">
+				<img class="design-thumbnail" src="sc_71_BestPractices.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Designing guides and best practices</h3>
+			<p class="doc-section">One of the challenges with AWS in general is the complexity of creating a solution. There are many multi-step tutorials that exist for creating solutions, but it is a challenge to create a multi-resource environment and have an ease of tearing it down when needed. Service Catalog offers a native ability to define solutions by linking multiple products and launching them as a single solution. It would be helpful for administrators to offer common sandbox environments where enterprise-class solutions can be tested. Here’s one of the designs that allows users setting up “best practice solutions” within Service Catalog. While it may look simple, the concept of providing such enterprise-grade solutions is unique.  </p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_72_helpContent.png">
+				<img class="design-thumbnail" src="sc_72_helpContent.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">Official AWS help content</h3>
+			<p class="doc-section">As with any AWS product release, there’s an extensive collaboration with other teams to coordinate beta, testing, launches, generating training material, working with Solution Architects on evaluating the product and with technical writing team to create help content. The Service Catalog product that my team was building went through significant changes and those need to be documented in the public help content. As part of driving a change, I created many architectural diagrams and UX prototypes to sell the new vision to the team. Those diagrams became the official help content for AWS.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+  <div class="section project">
+    <div class="container">
+		<div class="row">
+		<div class="six columns nooverflow">
+			<a href="sc_73_userResearch.png">
+				<img class="design-thumbnail" src="sc_73_userResearch.png">
+			</a>
+		</div>
+		<div class="six columns nooverflow">
+		<h3 class="section-heading">User research</h3>
+			<p class="doc-section">User research was generally an ongoing process throughout the product development. Due to complexity and the primary focus on the largest enterprises, there were challenges to recruit participants that would have understanding of the needs of large enterprises. We established an ongoing dialog with some key companies through and called it Customer Advisory Board. Through such discussions, we could get a better understanding of the user needs and get feedback on our solutions. I also partnered with AWS research team to develop personas and make sure we are delivering a consistent message across the entire AWS.</p>
+
+		</div>
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+  <div class="section project">
+    <div class="container">
+		<h3 class="section-heading">The end and the new beginning</h3>
+		<p class="doc-section">I joined AWS Service Catalog team with a simple mission to design a screens to make the enterprise AWS product more usable.  The product was in a beta state and without usability improvements specifically targeting large enterprises, AWS faced missing out on many large contracts. There was no prior UX involvement on the team, and the project seemed to be a short one. What ended up happening is focusing on the user needs completely changed the nature of the product and the nature of the development. I not only created the mockups, but redesigned large architectural parts of the product. That meant taking a step back and rewrite large portions of the product. I was able to drive consensus on the team and change the foundation of the product. The design was a fairly large undertaking as well: completely new patterns had to be developed, the ubiquitous table-based AWS paradigms had to be changed to something else as they didn’t work well on mobile. For overall development a new framework had to be designed and we based on Google’s Material Design. Also the application had goals to be brandable so that enterprises could match their own brand colors. We also wanted to allow offline operations so we picked to develop a Progressive Web App (PWA). This was the first effort at Amazon that I know to depart from many internal design frameworks and adopt Google’s Material Design principles. The goal was also to develop a flexible framework that can be open-sourced, so a lot of effort was spent on understanding the licensing of every design element so that we could release an open source version in the future.  There were many smaller design project along the way involving cross-team integration with other AWS teams that touch enterprise management and with AWS Marketplace. It was a year full of accomplishments and delighted customers that were showcasing my team’s designs as great examples of intuitive applications. 
+</p>
+<p class="doc-section">
+The new architecture, designs, and the established focus on the user demonstrated that having UX involvement earlier would likely to save time and not require significant rewrites. Having a successful product that was unlike anything previously released by AWS was a blessing and a curse. Customer were happy but the with the change of management the vision had lost some key allies and a question became “why does it feel like it is coming from our competitor Google?” While the look of the product was specific to AWS, the feel adhered to principles of Google’s Material Design framework. At the same time a new initiative within AWS was underway to unify all internal AWS applications under a new design framework Polaris. One thing certain about Amazon is that things never stay still and will change. While the designed foundation will likely remain in the foreseeable future, the look of Service Catalog will likely change. And a new cycle of iterative design starts, but this time it is grounded on a solid foundation and the focus on the end user will remain…
+</p>
+
+		<div class="row">
+		<div class="eight columns nooverflow">
+			<a href="sc_81_newBeginning.png">
+				<img class="design-thumbnail" src="sc_81_newBeginning.png">
+			</a>
+		</div>
+		<div class="four columns nooverflow">
+			<a href="20170511_ScMobile_TopMenu.mp4">
+				<img class="design-thumbnail" src="sc_82_videoMicroInteraction.png">
+			</a>
+		</div>
+
+		</div>
+	</div>
+  </div>  
+
+
+
+
+
+
+  <div class="section-description">
+    <div class="container">
+		<div class="row">
+			<div class="twelve columns">
+			<p class="section-footer">©2019  Vadim Volk</p>
+			</div>
+		</div>
+
+	</div>
+  </div>
+  
+  
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
